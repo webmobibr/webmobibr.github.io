@@ -1,17 +1,145 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Web & Mobi site">
+  <meta name="author" content="Web and Mobi webmasters">
   <title>Web & Mobi</title>
-  <meta name="description" content="Main page">
-  <meta name="author" content="Web & Mobi">
+  <link rel="canonical" href="https://webmobi.com.br">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
+  <!-- Favicons -->
+  <meta name="theme-color" content="#712cf9">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    #bgVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -99999;
+    }
+
+    #bgVideoFilter {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -99998;
+      background: linear-gradient(45deg, rgba(179,17,232,1) 0%, rgba(23,133,214,0.95) 60%, rgba(0,212,255,0.20) 100%)  no-repeat fixed;
+      /*background: linear-gradient(45deg, rgba(172, 112, 6, 1) 0%, rgba(127, 0, 250, 0.95) 40%, rgba(127, 0, 250, 0.4) 70%) no-repeat fixed;*/
+      background-size: cover;
+      /* https://css-tricks.com/almanac/properties/f/filter/ */
+      filter: sepia(0.5) saturate(2.0);
+      /* https://stackoverflow.com/a/42963980 */
+      /*transform: scale(1.1); */
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="headers.css" rel="stylesheet">
 </head>
 
 <body>
-  <h1>Web & Mobi</h1>
+  <video autoplay muted loop id="bgVideo">
+    <source src="./videos/pexels-gamol-9909477.mp4" type="video/mp4">
+  </video>
+  <div id="bgVideoFilter">&nbsp;</div>
+  <main>
+    <h1 class="visually-hidden">Headers examples</h1>
+
+    <div class="container-fluid px-0">
+      <header class="d-flex justify-content-center py-3 navbar-dark bg-dark">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        </ul>
+      </header>
+    </div>
+
+    <div class="px-4 py-5 my-5 text-center">
+      <img class="d-block mx-auto mb-4" src="./img/logo.png" alt="Web & Mobi logo" width="70%">
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at tortor justo. Etiam
+          pellentesque metus metus, id consectetur dui blandit maximus. Nulla facilisi. Donec semper, nisl sit amet
+          dapibus dignissim, metus lectus rutrum nisi, sit amet dictum est arcu eu turpis.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-outline-info btn-lg px-4 gap-3">Primary button</button>
+          <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>
